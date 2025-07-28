@@ -51,6 +51,7 @@
     /* width: 10ch; Fits ~10 digits */
     /* text-align: right; */
     box-sizing: border-box;
+    background-color :white;
 }
 
 
