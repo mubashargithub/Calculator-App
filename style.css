@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(6, 63, 67);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    height: 450px;
+    width: 25%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+.upper{
+    height: 27%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 7px ;
+    align-items: center;
+    background-color: black;
+    padding: 2px 14px;
+    color: rgb(255, 255, 255);
+}
+
+#hed{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: aquamarine;
+}
+
+.u-input>input{
+    font-size: 1.7rem;
+    font-weight: 800;
+    padding: 3px 6px;
+    width: 96%;
+    margin-left: 5px;
+    outline: none;
+    letter-spacing: 1px;
+    /* width: 10ch; Fits ~10 digits */
+    /* text-align: right; */
+    box-sizing: border-box;
+}
+
+
+.lower{
+    height: 70%;
+    padding: 10px 13px;   
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
+    grid-row-gap: 3px;
+    grid-column-gap: 3px;
+}
+
+.btn{
+    /* background-color: aqua; */
+    /* border: 2px solid red; */
+    background-color: black;
+}
+
+.btn>button{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(221, 221, 221);
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 1200px) {
+    .main {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .main {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+        width: 60%;
+        height: 400px;
+    }
+    
+    .btn > button {
+        font-size: 1.5rem;
+    }
+    
+    #hed {
+        font-size: 1.6rem;
+    }
+    
+    .u-input > input {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .main {
+        width: 85%;
+        height: 380px;
+    }
+    
+    .lower {
+        padding: 8px 10px;
+    }
+    
+    .btn > button {
+        font-size: 1.4rem;
+    }
+    
+    #hed {
+        font-size: 1.5rem;
+    }
+    
+    .u-input > input {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .main {
+        width: 95%;
+        height: 350px;
+    }
+    
+    .btn > button {
+        font-size: 1.3rem;
+    }
+    
+    #hed {
+        font-size: 1.4rem;
+    }
+    
+    .u-input > input {
+        font-size: 1.3rem;
+    }
+}
